@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2980b9;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.weather-card {
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.forecast-cards .card {
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .forecast-cards .card {
+    width: 100px;
+    padding: 8px;
+  }
+
+  input[type="text"] {
+    width: 150px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}
